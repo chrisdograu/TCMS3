@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>The search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="mine.jpeg" alt="Minecraft Image 1" onclick="changeImage('mine.jpeg', this)">
+                <img src="mintop.jpg" alt="Minecraft Image 2" onclick="changeImage('mintop.jpg', this)">
+                <img src="pass.webp" alt="Minecraft Image 3" onclick="changeImage('pass.webp', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="mine.jpeg" alt="Minecraft Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Minecraft (PC/Console/Mobile)</h1>
+                <h1>$18.00</h1>
+                <p>10x payments of $1.80, interest-free</p>
+                <button style="background-color:#606a90; border-radius: 15px; align-items: center; text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p>
+                    Build anything you can imagine, uncover mysterious secrets, and survive the night in this sandbox game. Minecraft is different every time you play, with unforgettable adventures awaiting you around every corner. Explore and build your way through an infinite world that you can shape at will, one block at a time. Players explore an open-world, three-dimensional, blocky, pixelated environment that is procedurally generated, where they can discover and extract raw materials, craft tools, build structures, or create landscapes. Depending on the game mode, they may fight computer-controlled enemies, as well as cooperate or compete with other players in the same world.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>Release Date: November 18, 2011</p>
+                <p>Genres: Sandbox, Survival, Multiplayer</p>
+                <p>- Model: Digital Media</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>Minecraft was initially released in 2009 as an independent project by Markus "Notch" Persson, with its full version released in 2011 for PC. The game has been expanded to various platforms over the years, being released in 2011 for mobile devices (Android and iOS), in 2012 for Xbox 360, in 2013 for PlayStation 3, and in 2014 for PlayStation 4, Xbox One, and PlayStation Vita. In 2017, Minecraft was released for the Nintendo Switch, and in 2020, it was launched for PlayStation 5 and Xbox Series X/S.
+                </p>
+                <p>Genres: Group Game, Survival, Multiplayer</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please verify with the manufacturers of the product and its components for any limitations on the use of all resources and functionalities.
+
+                *90-day warranty from the manufacturer for defects not caused by misuse.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact: someone@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Change the main image based on the clicked thumbnail
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove the 'selected' class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked thumbnail
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

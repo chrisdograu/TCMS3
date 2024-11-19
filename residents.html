@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil 2 RE GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Your search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="resident.png" alt="Resident Evil 2 Image 1" onclick="changeImage('resident.png', this)">
+                <img src="EVIL.jpg" alt="Resident Evil 2 Image 2" onclick="changeImage('EVIL.jpg', this)">
+                <img src="cara.jpeg" alt="Resident Evil 2 Image 3" onclick="changeImage('cara.jpeg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="resident.png" alt="Resident Evil 2 Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Resident Evil 2 Remake (PC/Console)</h1>
+                <h1>$158.00</h1>
+                <p>
+                    10x payments of $15.80, interest-free
+                </p>
+                <button style="background-color:#606a90; border-radius: 15px; align-items: center; text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p>
+                    Prepare to return to Raccoon City, where the nightmare begins once again. In Resident Evil 2 Remake, you take on the roles of Leon S. Kennedy and Claire Redfield, two survivors fighting for their lives amid a zombie apocalypse. This modern version of the 1998 classic brings impressive graphics, revamped gameplay, and an even more terrifying experience, while keeping the essence of the original intact.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>Release Date: January 25, 2019</p>
+                <p>Genres: Action, Horror, Adventure, Survival Horror</p>
+                <p>Game Mode: Single Player</p>
+                <p>Developer: Capcom</p>
+                <p>- Model: Digital Media</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>Resident Evil 2 Remake is a reimagining of the critically acclaimed 1998 original, with modern graphics powered by RE Engine, the same technology that powers Resident Evil 7 and Resident Evil Village. Developed by Capcom, the remake offers a more immersive and terrifying experience, with an over-the-shoulder camera system, gameplay changes, and the addition of new elements and characters, all while preserving the essence of the classic survival horror game.
+                </p>
+                <p>Genres: Action, Survival Horror, Adventure</p>
+                <p>Game Mode: Single Player</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please verify with the manufacturers of the product and its components for any limitations on the use of all resources and functionalities.
+
+                *90-day warranty from the manufacturer for manufacturing defects not caused by use.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact:someone@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc, thumbnailElement) {
+            // Change the main image based on the clicked thumbnail
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove the 'selected' class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked thumbnail
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

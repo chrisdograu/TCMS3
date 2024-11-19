@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil 4 Remake GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Your search for the best ends here</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="resi.png" alt="Resident Evil 4 Image 1" onclick="changeImage('resi.png', this)">
+                <img src="slasa.jpg" alt="Resident Evil 4 Image 2" onclick="changeImage('slasa.jpg', this)">
+                <img src="leom.webp" alt="Resident Evil 4 Image 3" onclick="changeImage('leom.webp', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="resi.png" alt="Resident Evil 4 Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Resident Evil 4 (PC/Console)</h1>
+                <h1>$199.90</h1>
+                <p>
+                    10x of $19.99 interest-free
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p> "Resident Evil 4 Remake" brings back the classic survival horror, now with modernized graphics and mechanics. The game follows Leon S. Kennedy on a mission to rescue the U.S. President's daughter, who has been kidnapped by a mysterious cult. Set in an isolated village in Europe, the game offers a mix of action, puzzles, and psychological horror, with grotesque enemies and a tense atmosphere. Get ready to face unimaginable horrors while uncovering the dark secrets of this cult.</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>Release Date: March 24, 2023</p>
+                <p>Genres: Action, Horror, Survival</p>
+                <p>Game Modes: Single-player</p>
+                <p>Developers: Capcom</p>
+
+                <p>- Model: Digital Media</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>"Resident Evil 4 Remake" is a faithful recreation of the 2005 original, but with new graphics, modern controls, and an enhanced story. The game features smoother action gameplay while keeping the terrifying elements that made the title a classic. Capcom has worked with refined art direction, creating even more realistic and terrifying environments and characters. This remake is considered one of the best reimaginings of a classic game, offering a unique experience for both old and new fans.</p>
+                <p>Genres: Action, Survival Horror</p>
+                <p>Game Modes: Single-player</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please check with the product manufacturers for any limitations on the use of all features and functionalities.
+
+                *90-day warranty from the manufacturer for defects in manufacturing, not caused by usage.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact:someemail@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="fb.png" alt="Facebook">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function changeImage(imageSrc, thumbnailElement) {
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

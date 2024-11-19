@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore Amoung us</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+           
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="cover.png" alt="amoungs" onclick="changeImage( 'cover.png', this)">
+                <img src="crewmate.jpg" alt="amongs" onclick="changeImage( 'crewmate.jpg', this)">
+                <img src="thumb.png" alt="slasd"     onclick="changeImage( 'thumb.png', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="cover.png" alt="amoung us iamges">
+            </div>
+
+            <div class="preco">
+                <h1>AMOUNG US (Pc/Console
+                    /Mobile)</h1>
+                <h1>R$18,00</h1>
+                <p>
+                    10x de 1,80 sem juros
+                </p>
+                <button  style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center; margin-top: ; ">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p>
+                    Cada jogador desempenha um de dois papéis,
+                    sendo a maioria tripulantes e um número
+                    sendo impostores. O objetivo dos tripulantes é identificar os
+                    impostores e/ou completar as tarefas ao redor do mapa sobrevivendo, enquanto o
+                    objetivo dos impostores é eliminar os tripulantes.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>
+                    -jogo eletrônico online, dos gêneros jogo em grupo e sobrevivência,
+                    desenvolvido e publicado pelo estúdio de jogos estadunidense InnerSloth.
+
+                </p>
+
+                <p>-modelo:midia digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>
+                    Lançado em junho de 2018 para Android e iOS, em novembro de 2018 para
+                    Microsoft Windows, em dezembro de 2020 para Nintendo Switch, e em dezembro
+                    de 2021 para PlayStation 4, PlayStation 5, Xbox One e Xbox Series X/S.
+                </p>
+                <p> Gênero(s):Jogo em grupo
+                    Sobrevivência
+                    Modos de jogo Multijogador</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Troca a imagem principal com base na miniatura clicada
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove a classe 'selected' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Adiciona a classe 'selected' à miniatura clicada
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

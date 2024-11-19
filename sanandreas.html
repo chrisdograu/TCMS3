@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore SAN Andreas </title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+           
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="ha.jfif" alt="amoungs" onclick="changeImage( 'ha.jfif', this)">
+                <img src="andreas.webp" alt="amongs" onclick="changeImage( 'andreas.webp', this)">
+                <img src="san.jpg" alt="slasd"     onclick="changeImage( 'san.jpg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="ha.jfif" alt="amoung us iamges">
+            </div>
+
+            <div class="preco">
+                <h1>GTA San Andreas US 
+                    Mobile
+                    </h1>
+                <h1>R$14,00</h1>
+                <p>
+                    10x de 14,80 com juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center; ">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+           
+                    <div class="bloco">
+                        <p class="titulo">
+                            INFORMAÇÕES SOBRE O PRODUTO
+                        </p>
+                        <p>
+                            Grand Theft Auto: San Andreas é um jogo eletrônico de ação e aventura, desenvolvido pela Rockstar North e publicado pela Rockstar Games. O jogo segue a história de Carl "CJ" Johnson, um homem que retorna à sua cidade natal, Los Santos, após a morte de sua mãe. Ao longo do jogo, CJ busca se vingar e retomar o controle de seu território enquanto lida com questões familiares, gangues e corrupção policial.
+                        </p>
+                    </div>
+                    <div class="bloco">
+                        <p class="titulo">
+                            Características
+                        </p>
+                        <p>
+                            - Jogo eletrônico de ação e aventura, com elementos de mundo aberto e narrativa envolvente.
+                        </p>
+                    
+                        <p>- Modelo: mídia física/digital</p>
+                    </div>
+                    <div class="bloco">
+                        <p class="titulo">
+                            Informações adicionais:
+                        </p>
+                        <p>
+                            Lançado em outubro de 2004 para PlayStation 2, e posteriormente para diversas outras plataformas, incluindo PC, Xbox, Nintendo Switch, PlayStation 3, PlayStation 4, Xbox One e dispositivos móveis.
+                        </p>
+                        <p> 
+                            Gênero(s): Ação e aventura, Mundo aberto, FPS, Corrida
+                        </p>
+                        <p>
+                            Modos de jogo: Single-player, Multiplayer (via mods ou em versões remasterizadas)
+                        </p>
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Troca a imagem principal com base na miniatura clicada
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove a classe 'selected' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Adiciona a classe 'selected' à miniatura clicada
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

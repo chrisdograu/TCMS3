@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+
+    <link rel="stylesheet" href="conf.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <a href="inicio.html" style="text-decoration: none;"><p> desenvolvido por  Christian</p></a>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="begining.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="begining.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>the search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">Playstation</a>
+            <a href="cps.html">Pc</a>
+            <a href="bile.html">Mobile</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+        <div class="papos">
+            <h1>GameStore</h1>
+            <p>
+                At GameStore, we are passionate about games and want to share that passion with you! Whether you're a casual gamer or a hardcore one, we have everything you need to take your gaming experience to the next level.
+            </p>
+            <p>
+                Here, we understand that every gamer is unique. Our support team is always ready to help with any game-related questions, advice on optimal setups, or any other technical issue. Our commitment is to ensure that your journey in the gaming world is the best it can be!
+            </p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="small.png" alt="Game 1" class="carousel-item">
+                <img src="alien.png" alt="Game 2" class="carousel-item">
+                <img src="cover.png" alt="Game 3" class="carousel-item">
+                <img src="mine.png" alt="Game 4" class="carousel-item">
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="reta">
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="eldens.html">
+                        <img src="small.png" alt="Elden">
+                        <p class="sla">
+                            Elden Ring (Pc/Xbox)
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="amoun.html">
+                        <img src="cover.png" alt="Among Us">
+                        <p class="sla">
+                            Among Us (Pc/Playstation/Mobile)
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="crafts.html">
+                        <img src="mine.png" alt="Minecraft">
+                        <p class="sla">
+                            Minecraft (Pc/Xbox/Mobile)
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="residents.html">
+                        <img src="resident.png" alt="Resident Evil 2 Remake">
+                        <p class="sla">
+                            Resident Evil 2 (Pc/Playstation)
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="reta">
+            <div class="orga">
+                <div class="caixa">
+                    <a href="mirages.html">
+                        <img src="assa.png" alt="Assassin's Creed">
+                        <p class="sla">
+                            Assassin's Creed Mirage (Pc/Xbox)
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="moder.html">
+                        <img src="modern.webp" alt="Call of Duty">
+                        <p class="sla">
+                            COD Modern Warfare 2 (Pc/PlayStation)
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="evi.html">
+                        <img src="resi.png" alt="Resident Evil 4">
+                        <p class="sla">
+                            Resident Evil 4 (Pc/Xbox)
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="alie.html">
+                        <img src="alien.png" alt="Alien Isolation">
+                        <p class="sla">
+                            Alien Isolation (Pc/PlayStation)
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="supors.html">
+                    <p>contact:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        let index = 0;
+
+        // Function to move the slides
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            // Update the index
+            index += step;
+
+            // If the index exceeds the limits, loop back to the beginning or end
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            // Move the images
+            const newTransform = -index * 100; // Move one image width
+            document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+        }
+
+        // Automatic navigation (every 5 seconds)
+        setInterval(() => {
+            moveSlide(1); // Move to the next image
+        }, 5000); // 5-second interval
+    </script>
+
+</body>
+
+</html>

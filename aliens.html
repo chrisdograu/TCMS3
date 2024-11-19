@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien: Isolation GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt=" Logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+        
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="alien.png" alt="Alien: Isolation Image 1" onclick="changeImage('alien.png', this)">
+                <img src="alss.webp" alt="Alien: Isolation Image 2" onclick="changeImage('alss.webp', this)">
+                <img src="ars.jpeg" alt="Alien: Isolation Image 3" onclick="changeImage('ars.jpeg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="alien.png" alt="Alien: Isolation Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Alien: Isolation (PC/Console)</h1>
+                <h1>R$99,90</h1>
+                <p>
+                    10x de 9,99 sem juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center;">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p>
+                    "Alien: Isolation" coloca você no papel de Amanda Ripley, filha de Ellen Ripley, em uma jornada tensa e aterrorizante para descobrir o que aconteceu com sua mãe, após o desaparecimento da nave Nostromo. Um jogo de sobrevivência em uma estação espacial, onde a inteligência artificial do Xenomorfo persegue o jogador, criando uma experiência única de tensão e medo. Prepare-se para enfrentar o terror e sobreviver a um dos piores pesadelos do universo.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>Lançamento: 7 de outubro de 2014
+                    Gênero(s): Ação, Horror, Survival
+                    Modos de jogo: Solo
+                    Desenvolvedores: Creative Assembly
+                </p>
+
+                <p>- Modelo: Mídia Digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>O jogo foi desenvolvido pela Creative Assembly, conhecida pela série "Total War". "Alien: Isolation" oferece uma experiência imersiva com gráficos impressionantes e som atmosférico. O jogo é amplamente elogiado por seu design de jogabilidade baseado em stealth e terror psicológico, tornando-se um dos melhores jogos de horror de todos os tempos.
+                </p>
+                <p>Gênero(s): Ação, Horror de sobrevivência
+                    Modos de jogo: Solo</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="fb.png" alt="Facebook">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function changeImage(imageSrc, thumbnailElement) {
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

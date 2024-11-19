@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+          
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="resident.png" alt="amoungs" onclick="changeImage( 'resident.png', this)">
+                <img src="EVIL.jpg" alt="amongs" onclick="changeImage( 'EVIL.jpg', this)">
+                <img src="cara.jpeg" alt="slasd"     onclick="changeImage( 'cara.jpeg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="resident.png" alt="amoung us iamges">
+            </div>
+
+            <div class="preco">
+                <h1>Resdent Evil 2 RE(Pc/Console
+                    )</h1>
+                <h1>R$158,00</h1>
+                <p>
+                    10x de 15,80 sem juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center; ">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p>
+                    Prepare-se para retornar à cidade de Raccoon City, onde o pesadelo começa novamente. Em Resident Evil 2 Remake, você assume os papéis de Leon S. Kennedy e Claire Redfield, dois sobreviventes que lutam pela vida em meio a um apocalipse zumbi. Esta versão moderna do clássico de 1998 traz gráficos impressionantes, uma jogabilidade renovada e uma experiência ainda mais aterrorizante, mantendo a essência do original.
+
+
+
+
+
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>Lançamento: 25 de janeiro de 2019
+                    Gênero(s): Ação, Terror, Aventura, Survival Horror
+                    Modos de Jogo: Solo
+                    Desenvolvedor: Capcom
+                </p>
+
+                <p>-modelo:midia digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>Resident Evil 2 Remake é uma recriação do aclamado título original de 1998, com gráficos modernos em RE Engine, a mesma tecnologia que alimenta Resident Evil 7 e Resident Evil Village. O remake foi desenvolvido pela Capcom e traz uma experiência mais imersiva e assustadora, com o sistema de câmeras por cima do ombro, mudanças na jogabilidade e a inclusão de novos elementos e personagens, sem perder a essência do clássico survival horror.
+
+
+
+                </p>
+                <p> Gênero(s): Ação, Survival Horror, Aventura
+                    Modos de Jogo: Solo</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Troca a imagem principal com base na miniatura clicada
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove a classe 'selected' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Adiciona a classe 'selected' à miniatura clicada
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

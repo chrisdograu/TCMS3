@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+       <div class="nasv">
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+
+        </div>
+    </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="assa.png" alt="amoungs" onclick="changeImage( 'assa.png', this)">
+                <img src="asas.jpeg" alt="amongs" onclick="changeImage( 'asas.jpeg', this)">
+                <img src="sad.jpeg" alt="slasd"     onclick="changeImage( 'sad.jpeg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="assa.png" alt="amoung us iamges">
+            </div>
+
+            <div class="preco">
+                <h1>Assasin'Creed Mirage(Pc/Console
+                    )</h1>
+                <h1>R$168,00</h1>
+                <p>
+                    10x de 16,80 sem juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center; ">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p>
+                    Prepare-se para viajar ao passado e viver a jornada de Basim Ibn Ishaq, um jovem ladrão em busca de vingança e justiça nas movimentadas ruas de Bagdá, durante a Idade de Ouro do Império Islâmico. Em Assassin's Creed Mirage, a franquia retorna às suas raízes, oferecendo uma experiência mais focada na stealth, nas infiltrações e na exploração urbana, com uma narrativa imersiva que coloca o jogador no centro de uma história de mistério, traição e redenção.
+
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>Lançamento: 5 de outubro de 2023
+                   
+                    Desenvolvedor: Ubisoft
+                    Plataformas: PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, PC
+                    
+                </p>
+
+                <p>-modelo:midia digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>Assassin's Creed Mirage se destaca por retornar ao formato de jogabilidade mais próximo de Assassin's Creed II e Assassin's Creed: Brotherhood, priorizando o uso de furtividade, parkour e combate mais direto, com um foco maior na exploração da cidade e no enredo. A história é centrada em Basim, que começa sua jornada como um ladrão e, ao longo do jogo, vai se tornando um Assassino dentro da Ordem. O jogo explora suas motivações, seus conflitos internos e como ele se conecta com os eventos históricos da época.
+
+                </p>
+                <p>  Gênero(s): Ação, Aventura, Stealth, Mundo Aberto
+                    Modos de Jogo: Solo</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Troca a imagem principal com base na miniatura clicada
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove a classe 'selected' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Adiciona a classe 'selected' à miniatura clicada
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

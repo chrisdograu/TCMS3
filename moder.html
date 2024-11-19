@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Warfare 2 GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Your search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="modern.webp" alt="Modern Warfare 2 Image 1" onclick="changeImage('modern.webp', this)">
+                <img src="warfare.jpeg" alt="Modern Warfare 2 Image 2" onclick="changeImage('warfare.jpeg', this)">
+                <img src="slas.jpeg" alt="Modern Warfare 2 Image 3" onclick="changeImage('slas.jpeg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="modern.webp" alt="Modern Warfare 2 Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Modern Warfare 2 (PC/Console)</h1>
+                <h1>$68.00</h1>
+                <p>
+                    10x of $6.80 interest-free
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p>
+                    Get ready to dive into one of the most intense campaigns in gaming history with Call of Duty: Modern Warfare 2. Released in 2009, the title became a landmark in the first-person shooter genre, bringing an epic action narrative and a multiplayer mode that redefined the genre. With stunning graphics for its time, an engaging story, and innovative combat mechanics, Modern Warfare 2 remains one of the most beloved games in the Call of Duty series.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>Release Date: November 10, 2009</p>
+                <p>Developer: Infinity Ward</p>
+
+                <p>- Model: Digital Media</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>Call of Duty: Modern Warfare 2 is the direct sequel to Call of Duty 4: Modern Warfare, maintaining the successful formula of realistic combat and dynamic gameplay. The game's campaign is marked by cinematic moments and breathtaking action sequences, including infiltration missions, rescues, and high-intensity confrontations.
+                </p>
+                <p>Genres: First-person shooter, Action, War</p>
+                <p>Game Modes: Campaign, Online Multiplayer</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please verify with the manufacturers of the product and its components for any limitations on the use of all
+                resources and functionalities.
+
+                *90-day warranty from the manufacturer for manufacturing defects not caused by usage.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact:someemail@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="fb.png" alt="Facebook">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function changeImage(imageSrc, thumbnailElement) {
+            // Change the main image based on the clicked thumbnail
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove the 'selected' class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked thumbnail
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

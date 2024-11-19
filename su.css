@@ -1,0 +1,70 @@
+/* Estilo geral */
+body {
+    background-color: #1D2130;
+    color: #f1f1f1;
+}
+
+/* Alterações no título do suporte */
+.papos h1 {
+    color: #7faccf;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para a seção de FAQ */
+.faq {
+    background-color: #4a5a31;
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #00bcd4;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #dcdcdc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo de contato */
+.contato {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contato p {
+    color: #f1f1f1;
+    font-size: 18px;
+}
+
+.contato h2 {
+    color: #00bcd4;
+    font-size: 26px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .faq-item h3 {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+}

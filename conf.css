@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fundo geral e cor do texto */
+body {
+    background-color: #1D2130;
+    color: #f1f1f1;
+}
+
+/* HEADER - Melhorando o layout do cabeçalho */
+header {
+    flex-direction: column;
+    background-color: #212121;
+    display: flex;
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    margin-left: 25px;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    justify-content: center;
+    border-top: 3px solid #00bcd4;
+}
+
+nav a {
+    margin-left: 35px;
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* Buscador */
+#divBusca {
+    background-color: #333;
+    border-radius: 15px;
+    color: #f1f1f1;
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    width: 100%;
+    color: #f1f1f1;
+}
+
+header {
+    flex-direction: column;
+    background-color: #1D2130;
+    display: flex;
+    color: #f1f1f1;
+    width: 100%;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.chris {
+    width: 100%;
+    background-color: #333;
+}
+
+.chris p {
+    margin-left: 20px;
+}
+
+.etc {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #483285;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 20%;
+    margin-left: 15px;
+    margin-top: 2px;
+    border-radius:120px;
+    margin-bottom: 5px;
+}
+
+.etc a{
+    text-decoration: none;
+    color: #ccc;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tema {
+    flex: 20%;
+    text-align: right;
+   margin-left: 00px;
+}
+
+.lema {
+    flex: 30%;
+    text-align: right;
+    margin-right: 35%;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.lemas{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo geral da seção .papos */
+.papos {
+    background-color: #4a5a31; /* Cor de fundo verde mais suave */
+    width: 90%; /* Largura de 90% da tela para um layout mais fluido */
+    border-radius: 20px; /* Bordas arredondadas */
+    display: flex; /* Usando flexbox para garantir o alinhamento adequado */
+    flex-direction: column; /* Itens na vertical */
+    align-items: center; /* Alinha o conteúdo no centro horizontalmente */
+    padding: 20px; /* Espacamento interno maior */
+    margin-left: auto; /* Centraliza o componente horizontalmente */
+    margin-right: auto; /* Centraliza o componente horizontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+}
+
+/* Estilo do título (h1) */
+.papos h1 {
+    text-align: center; /* Centraliza o título */
+    color: #7faccf; /* Cor suave e sofisticada para o título */
+    font-size: 28px; /* Tamanho de fonte adequado para destaque */
+    margin-bottom: 15px; /* Espaçamento inferior para separar do conteúdo */
+    font-weight: 700; /* Deixa o título mais forte */
+}
+
+/* Estilo para o parágrafo (p) */
+.papos p {
+    text-align: center; /* Centraliza o texto */
+    color: #dcdcdc; /* Cor suave para o texto do parágrafo */
+    margin-top: 5px; /* Espaçamento superior */
+    font-size: 20px; /* Ajuste de tamanho para melhor legibilidade */
+    line-height: 1.6; /* Melhora a legibilidade ao aumentar o espaçamento entre as linhas */
+    max-width: 1200px; /* Limita a largura para evitar que o texto ocupe toda a tela */
+}
+
+/* Efeito de hover para .papos */
+.papos:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Aumenta a sombra ao passar o mouse */
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 3px solid #9b2d20;
+    margin: 0;
+}
+
+.nasv{
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    background-color: #606a90;
+    width: 90%;
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nasv a{
+    flex: 20%;
+}
+
+main {
+    background-color: #1D2130;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width:40%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 10;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+}
+
+.papos {
+    width: 95%; /* Deixa o container um pouco maior em telas menores */
+    padding: 15px; /* Ajuste no padding para se adaptar a telas pequenas */
+}
+
+.papos h1 {
+    font-size: 24px; /* Reduz o tamanho do título em dispositivos menores */
+}
+
+.papos p {
+    font-size: 14px; /* Ajusta o tamanho da fonte para texto mais legível */
+}
+
+.reta {
+    flex-direction: row;
+    display: flex;
+    width: 95%;
+    margin-left: 20px; 
+}
+
+.orga {
+    flex: 23%;
+}
+
+.caixa {
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Sombra suave para profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90%;
+    height: flex;
+    margin-right: 20px;
+    margin: 10px 20px 20px 10px;  
+}
+
+.caixa:hover {
+    transform: translateY(-5px);  /* Eleva um pouco a caixa ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);  /* Aumenta a sombra no hover */
+}
+
+.caixa img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00bcd4;  /* Linha azul abaixo da imagem */
+}
+
+.caixa p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 15px 10px;
+}
+
+.caixa a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.caixa a:hover {
+    color: #00bcd4;
+}
+
+.sla {
+    margin-right: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #1D2130;
+    color: #f1f1f1;
+}
+
+footer p {
+    margin-left: 10px;
+    text-align: left;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.reto {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.menu {
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    margin-left: 10px;
+    width: 23px;
+    cursor: pointer;
+}
+
+.logos {
+    flex: 20%;
+    margin-right: ;
+    margin-top: 2px;
+    text-align: right;
+}
+
+.logos img {
+    width: 50px;
+}
+
+.contaF {
+    text-align: left;
+    margin-left: 70px;
+    flex: 20%;
+}
+
+.game {
+    align-items: center;
+    text-align: center;
+    flex: 100%;
+}
+
+.game h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: auto;
+    }
+
+    .etc {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    nav a{
+        margin-left: 0px;
+    }
+
+    .nasv {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contaF {
+        width: 20%;
+        margin-top: 10px;
+        margin-right:auto;
+    }
+
+    .game {
+        flex: 20%;
+    }
+
+    .reta {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .reto {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu {
+        font-size: 30px;
+        margin: 10px;
+    }
+}

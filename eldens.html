@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Your search for the best ends here</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="small.png" alt="Elden Ring Image 1" onclick="changeImage('small.png', this)">
+                <img src="selocjis.jpg" alt="Elden Ring Image 2" onclick="changeImage('selocjis.jpg', this)">
+                <img src="Rings.jpg" alt="Elden Ring Image 3" onclick="changeImage('Rings.jpg', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="small.png" alt="Elden Ring Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Elden Ring (PC/Console)</h1>
+                <h1>$108.00</h1>
+                <p>10x of $10.80, interest-free</p>
+                <button style="background-color:#606a90; border-radius: 15px; align-items: center; text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p>
+                    Forge your own destiny as you explore the vast lands of **Elden Ring**, where adventure, mystery, and danger await at every turn. In an open world brimming with secrets, you will face terrifying creatures, explore ancient ruins, and uncover deep secrets in a rich fantasy universe. As you journey through desolate lands teeming with formidable enemies, you’ll have the chance to customize your character, upgrade your skills, and perhaps alter the very course of your fate. Prepare to battle powerful bosses, tackle complex challenges, and unravel the true story behind the **Elden Ring**, in an epic journey that will test your courage and strategic prowess.
+                </p>
+            </div>
+
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>
+                    - Release Date: February 25, 2022<br>
+                    - Genres: Action, RPG, Open World<br>
+                    - Game Modes: Solo, Multiplayer<br>
+                    - Developers: FromSoftware, BANDAI NAMCO Entertainment
+                </p>
+                <p>- Model: Digital Media</p>
+            </div>
+
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>
+                    **Elden Ring** was created by the masters of the action RPG genre at **FromSoftware**, led by Hidetaka Miyazaki, in collaboration with George R.R. Martin, known for his "A Song of Ice and Fire" books. The game was released globally in 2022 for PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, and PC. Acclaimed by critics for its open-world design and compelling narrative, **Elden Ring** challenges players to explore an immense and fragmented kingdom, full of secrets, dangers, and combat challenges.
+                </p>
+                <p>
+                    Genres: Action, Open-World RPG<br>
+                    Game Modes: Online Multiplayer, Solo
+                </p>
+            </div>
+        </div>
+
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please verify with the product manufacturers and their components for any limitations on the use of all resources and functionalities.
+
+                *90-day warranty by the manufacturer against defects not caused by misuse.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact: someone@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Change the main image based on the clicked thumbnail
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove the 'selected' class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked thumbnail
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

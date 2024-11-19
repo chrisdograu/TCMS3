@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Suporte</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="su.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="inicio.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Suporte técnico dedicado para você!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+           
+            <a href="xbox.html">Xbox</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="pc.html">PC</a>
+            <a href="mobile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar suporte..." />
+        </div>
+
+        <div class="papos">
+            <h1>Bem-vindo ao Suporte da GameStore</h1>
+            <p>Se você está tendo problemas com jogos, configurações ou precisa de assistência técnica, está no lugar certo!</p>
+            <p>Oferecemos suporte especializado para resolver qualquer dúvida ou problema técnico relacionado aos jogos, consoles e dispositivos. Veja abaixo algumas das questões mais comuns e como podemos ajudar.</p>
+        </div>
+
+        <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <button class="faq-question">Como posso resolver problemas de instalação?</button>
+                <div class="faq-answer">
+                    <p>Certifique-se de que seu dispositivo atende aos requisitos mínimos do jogo. Tente reinstalar o jogo se necessário.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Meu jogo está travando, o que fazer?</button>
+                <div class="faq-answer">
+                    <p>Feche outros programas e verifique atualizações para o jogo ou sistema operacional.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Onde posso encontrar guias de configuração?</button>
+                <div class="faq-answer">
+                    <p>Consulte nossos guias online ou baixe PDFs diretamente no nosso site.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Se a sua dúvida não foi respondida aqui, entre em contato com nossa equipe de suporte técnico.</p>
+            <p><strong>Email de Suporte:</strong> suporte@gamestore.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="reto">
+            <div class="contaF">
+                <p>Contato: suporte@gamestore.com</p>
+            </div>
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <a href="https://www.instagram.com/gamestore">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function altername() {
+            const links = document.getElementById('links');
+            links.style.display = links.style.display === 'block' ? 'none' : 'block';
+        }
+
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

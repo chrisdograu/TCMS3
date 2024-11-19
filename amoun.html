@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Among Us</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Created by: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>The search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">PlayStation</a>
+            <a href="cps.html">PC</a>
+            <a href="bile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="cover.png" alt="Among Us Image 1" onclick="changeImage('cover.png', this)">
+                <img src="crewmate.jpg" alt="Among Us Image 2" onclick="changeImage('crewmate.jpg', this)">
+                <img src="thumb.png" alt="Among Us Image 3" onclick="changeImage('thumb.png', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="cover.png" alt="Among Us Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>Among Us (PC/Console/Mobile/Nintendo)</h1>
+                <h1>$18.00</h1>
+                <p>10 installments of $1.80, interest-free</p>
+                <button style="background-color:#606a90; border-radius: 15px; align-items: center; text-align: center;">
+                    <h1>Buy</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    PRODUCT INFORMATION
+                </p>
+                <p>
+                    Each player takes on one of two roles, with most being Crewmates and a few being Impostors. The goal of the Crewmates is to identify the Impostors and/or complete tasks around the map while surviving, while the Impostors' goal is to eliminate the Crewmates.
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Features
+                </p>
+                <p>
+                    - Online electronic game, categorized as a multiplayer and survival game, developed and published by the American game studio InnerSloth.
+                </p>
+                <p>- Model: Digital Media</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Additional Information:
+                </p>
+                <p>
+                    Released in June 2018 for Android and iOS, in November 2018 for Microsoft Windows, in December 2020 for Nintendo Switch, and in December 2021 for PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S.
+                </p>
+                <p>Genres: Group Game, Survival</p>
+                <p>Game Modes: Multiplayer</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Images are for illustrative purposes only.
+
+                All information provided is the responsibility of the Manufacturer/Supplier.
+
+                Please verify with the manufacturers of the product and its components for any limitations on the use of all resources and functionalities.
+
+                *90-day warranty from the manufacturer against defects not caused by misuse.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact: someone@example.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Change the main image based on the clicked thumbnail
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove the 'selected' class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked thumbnail
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>

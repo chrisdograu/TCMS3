@@ -1,0 +1,23 @@
+.papo{
+    background-color: #4a5a31 ;
+    width: 90%;
+    border-radius: 20px;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 50px;
+}
+.papo h1{
+text-align: center;
+color: #7faccf  ;
+}
+.papo p{
+    text-align: center;
+    color: #dcdcdc    ;
+    margin-top: 5px;
+}
+@media screen and (max-width: 480px) {
+
+.papo{
+        margin-left: 30px;
+    }
+}

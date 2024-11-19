@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="box.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <a href="inicio.html" style="text-decoration: none;"><p> desenvolvido por  Christian</p></a>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="begining.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="begining.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>the search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">Playstation</a>
+            <a href="cps.html">Pc</a>
+            <a href="bile.html">Mobile</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="papo" style="background-color: #0a1d3c;">
+            <h1 style="color: #fff453;">PlayStation</h1>
+            <p style="color:rgb(54, 255, 54);">Prepare yourself for a new era of gaming with PlayStation, where the most immersive and innovative experiences become a reality. With the incredible power of PlayStation 5, you'll enjoy next-gen graphics, virtually no load times, and an exclusive collection of games that define the future of entertainment.</p>
+            <p style="color:rgb(54, 255, 54);">With features like PlayStation Network, you can play online with friends around the world, enjoy great deals on the PlayStation Store, and explore games that aren't available on any other platform. PlayStation takes you to unforgettable worlds, with exclusive titles like "Demon's Souls", "The Last of Us Part II", and many more. Are you ready to game in style?</p>
+        </div>
+
+        <div class="reta">
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="moder.html">
+                        <img src="modern.webp" alt="call of duty">
+                        <p class="sla">
+                            COD Modern Warfare 2
+                        </p><p>
+                            $68.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="alie.html">
+                        <img src="alien.png" alt="Alien Isolation">
+                        <p class="sla">
+                            Alien Isolation
+                        </p><p>
+                            $99.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="amoun.html">
+                        <img src="cover.png" alt="Among Us">
+                        <p class="sla">
+                            Among Us
+                        </p><p>
+                            $18.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="residents.html">
+                        <img src="resident.png" alt="Resident Evil 2 Remake">
+                        <p class="sla">
+                            Resident Evil 2
+                        </p><p>
+                            $158.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="small.png" alt="Game 1" class="carousel-item">
+                <img src="alien.png" alt="Game 2" class="carousel-item">
+                <img src="cover.png" alt="Game 3" class="carousel-item">
+                <img src="mine.png" alt="Game 4" class="carousel-item">
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact:someone@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    let index = 0;
+
+    // Function to move the images
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        
+        // Update the index
+        index += step;
+        
+        // If the index exceeds the limits, loop back to the start or end
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+
+        // Move the images
+        const newTransform = -index * 100; // Move the width of one image
+        document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+    }
+
+    // Auto-navigation (every 5 seconds)
+    setInterval(() => {
+        moveSlide(1); // Move to the next image
+    }, 5000); // 5-second interval
+
+</script>
+
+</body>
+
+</html>

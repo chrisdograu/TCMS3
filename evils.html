@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE 4 Remake GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt=" Logo">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+         
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+            <div class="thumbnails">
+                <img src="resi.png" alt="Alien: Isolation Image 1" onclick="changeImage('resi.png', this)">
+                <img src="slasa.jpg" alt="Alien: Isolation Image 2" onclick="changeImage('slasa.jpg', this)">
+                <img src="leom.webp" alt="Alien: Isolation Image 3" onclick="changeImage('leom.webp', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="resi.png" alt="Alien: Isolation Main Image">
+            </div>
+
+            <div class="preco">
+                <h1>REsident Evil 4(PC/Console)</h1>
+                <h1>R$199,90</h1>
+                <p>
+                    10x de 19,99 sem juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center;">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p> "Resident Evil 4 Remake" traz de volta o clássico de survival horror, agora com gráficos e mecânicas modernizadas. O jogo segue Leon S. Kennedy em uma missão para resgatar a filha do presidente dos Estados Unidos, sequestrada por uma seita misteriosa. Ambientado em uma vila isolada na Europa, o jogo oferece uma mistura de ação, puzzles e terror psicológico, com inimigos grotescos e uma atmosfera tensa. Prepare-se para enfrentar horrores inimagináveis enquanto desvenda os segredos sombrios dessa seita. </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>Lançamento: 7 de outubro de 2014
+                    Gênero(s): Ação, Horror, Survival
+                    Modos de jogo: Solo
+                    Desenvolvedores: Creative Assembly
+                </p>
+
+                <p>- Modelo: Mídia Digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>Resident Evil 4 Remake" é uma recriação fiel do original de 2005, mas com novos gráficos, controles modernos e uma história aprimorada. O jogo apresenta uma jogabilidade de ação mais fluida, além de manter os elementos de terror e tensão que tornaram o título um clássico. A Capcom trabalhou com uma direção de arte refinada, criando cenários e personagens ainda mais realistas e aterrorizantes. Este remake é considerado uma das melhores reinterpretações de um jogo clássico, oferecendo uma experiência única para os fãs antigos e novos.</p>
+                <p>Gênero(s): Ação, Horror de sobrevivência <br> Modos de jogo: Solo</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="fb.png" alt="Facebook">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function changeImage(imageSrc, thumbnailElement) {
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            thumbnailElement.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>

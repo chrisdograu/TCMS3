@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+
+    <link rel="stylesheet" href="conf.css">
+     <link rel="stylesheet" href="box.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="inicio.html">
+                 <div class="logo">
+                <img src="logo.png" alt="logs">
+            </div>
+        </a>
+            <a href="inicio.html">
+            <div class="tema">
+                <h1>GameStore</h1>
+            </div>
+        </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+  
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+        
+        </div>
+      
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+
+        </div>
+<div class="papo">
+        <h1>XBOX</h1>
+<p>Descubra uma nova era de jogos com o Xbox, uma das plataformas de videogame mais poderosas 
+    e inovadoras do mundo. Com gráficos impressionantes, desempenho de última geração e uma vasta 
+    biblioteca de jogos exclusivos, o Xbox oferece uma experiência incomparável 
+    para os gamers de todos os estilos.</p><p>Com o Xbox, você não está apenas jogando; você está entrando em um ecossistema interativo que conecta jogadores ao redor do mundo, com funcionalidades como Xbox Live e cross-play, permitindo competir e cooperar com amigos e jogadores de diferentes plataformas. Prepare-se para embarcar em uma jornada sem igual com a confiança de uma plataforma que evolui a cada geração.
+    </p>
+</div>
+        <div class="reta">
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="elden.html">
+                        <img src="small.png" alt="Elden">
+                        <p class="sla">
+                            Elden Ring (Pc/Console)
+                        </p><p>
+                            R$108,00
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="orga">
+                <div class="caixa">
+                    <a href="craft.html">
+                        <img src="mine.png" alt="minecra">
+                        <p class="sla">
+                            Minecraft
+                            (Pc/Console
+                            /Mobile/
+                            Nintendo)
+
+                        </p><p>
+                            R$18,00
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+           
+
+       
+      
+            <div class="orga">
+                <div class="caixa">
+                    <a href="mirage.html">
+                        <img src="assa.png" alt="creed">
+                        <p class="sla">
+                            Assasin's Creed Mirage 
+                        </p><p>
+                            R$168,90
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="orga">
+                <div class="caixa">
+                    <a href="evils.html">
+                        <img src="resi.png" alt="evil">
+                        <p class="sla">
+                            REsident Evil 4 
+                        </p><p>
+                            R$199,90
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="small.png" alt="Jogo 1" class="carousel-item">
+                    <img src="alien.png" alt="Jogo 2" class="carousel-item">
+                    <img src="cover.png" alt="Jogo 3" class="carousel-item">
+                    <img src="mine.png" alt="Jogo 4" class="carousel-item">
+                </div>
+                
+                <!-- Botões de navegação -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+    
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <p>contato:algum@gmail.com</p>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script >
+
+    let index = 0;
+
+    // Função para mover as imagens
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        
+        // Atualiza o índice
+        index += step;
+        
+        // Caso o índice ultrapasse os limites, volta para o início ou fim
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+
+        // Mover as imagens
+        const newTransform = -index * 100; // Move a largura de uma imagem
+        document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+    }
+
+    // Navegação automática (a cada 5 segundos)
+    setInterval(() => {
+        moveSlide(1); // Avança para a próxima imagem
+    }, 5000); // Intervalo de 5 segundos
+</script>
+
+    </script>
+
+
+
+
+</body>
+
+</html>

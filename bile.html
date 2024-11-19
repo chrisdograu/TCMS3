@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="box.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <a href="inicio.html" style="text-decoration: none;"><p> desenvolvido por  Christian</p></a>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="begining.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="begining.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>the search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">Playstation</a>
+            <a href="cps.html">Pc</a>
+            <a href="bile.html">Mobile</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="papo" style="background-color: #fff453;">
+            <h1 style="color: green;">Mobile</h1>
+            <p style="color: #0a1d3c">Take the fun with you wherever you go with mobile games! Smartphones provide a flexible and accessible gaming platform with amazing titles you can play anywhere. With graphics optimized for mobile devices and intuitive controls, mobile games offer quick and engaging experiences for all types of players.</p>
+            <p style="color: #0a1d3c">From casual games to large-scale titles, mobile offers a wide range of options for you to enjoy during breaks or on the go. Connect with a global community of players and enjoy features like cross-play, social media integration, and constant updates. Get ready to play what you want, when you want, right in the palm of your hand!</p>
+        </div>
+
+        <div class="reta">
+            <div class="orga">
+                <div class="caixa">
+                    <a href="amoun.html">
+                        <img src="cover.png" alt="Among Us">
+                        <p class="sla">
+                            Among Us
+                        </p>
+                        <p>
+                            $18.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="crafts.html">
+                        <img src="mine.png" alt="Minecraft">
+                        <p class="sla">
+                            Minecraft
+                        </p>
+                        <p>
+                            $18.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="orga">
+                <div class="caixa">
+                    <a href="san.html">
+                        <img src="ha.jfif" alt="GTA San Andreas">
+                        <p class="sla">
+                            GTA San Andreas
+                        </p>
+                        <p>
+                            $30.00
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="small.png" alt="Game 1" class="carousel-item">
+                <img src="alien.png" alt="Game 2" class="carousel-item">
+            </div>
+
+            <!-- Navigation buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contact: someone@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+    let index = 0;
+
+    // Function to move the images
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+        
+        // Update index
+        index += step;
+        
+        // If index exceeds the limits, loop back to the start or end
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+
+        // Move images
+        const newTransform = -index * 100; // Move the width of one image
+        document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+    }
+
+    // Auto-navigation (every 5 seconds)
+    setInterval(() => {
+        moveSlide(1); // Move to the next image
+    }, 5000); // 5 seconds interval
+
+</script>
+
+</body>
+
+</html>

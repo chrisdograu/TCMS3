@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Suporte</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="su.css">
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por: Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="inicio.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="inicio.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>Suporte técnico dedicado para você!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            <div>
+                <div class="menu" onclick="altername();">
+                    &#9776;
+                </div>
+                <div class="links" id="links">
+                    <a href="produtos.html">Todos os Jogos</a>
+                    <a href="suportes.html">Suporte</a>
+                    <a href="promocoes.html">Promoções</a>
+                </div>
+            </div>
+            <a href="xbox.html">Xbox</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="pc.html">PC</a>
+            <a href="mobile.html">Mobile</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar suporte..." />
+        </div>
+
+        <div class="papos">
+            <h1>Bem-vindo ao Suporte da GameStore</h1>
+            <p>
+                Se você está tendo problemas com jogos, configurações ou precisa de assistência técnica, está no lugar certo! Nossa equipe está aqui para ajudar.
+            </p>
+            <p>
+                Oferecemos suporte especializado para resolver qualquer dúvida ou problema técnico relacionado aos jogos, consoles e dispositivos. Veja abaixo algumas das questões mais comuns e como podemos ajudar.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Como posso resolver problemas de instalação?</h3>
+                <p>Para resolver problemas de instalação, certifique-se de que seu dispositivo atende aos requisitos mínimos do jogo. Se o erro persistir, tente reinstalar o jogo ou entre em contato com o suporte técnico.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Meu jogo está travando, o que fazer?</h3>
+                <p>Se o seu jogo está travando, tente fechar outros programas que possam estar consumindo muitos recursos. Também verifique se há atualizações disponíveis para o jogo ou para o seu sistema operacional.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Onde posso encontrar guias de configuração?</h3>
+                <p>Oferecemos guias detalhados de configuração para todos os dispositivos em nossa seção de suporte. Você pode consultar os guias online ou baixar os PDFs diretamente no nosso site.</p>
+            </div>
+        </div>
+
+        <div class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Se a sua dúvida não foi respondida aqui, entre em contato com nossa equipe de suporte técnico.</p>
+            <p><strong>Email de Suporte:</strong> suporte@gamestore.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="reto">
+            <div class="contaF">
+                <p>contato: suporte@gamestore.com</p>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let index = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+
+            index += step;
+
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            const newTransform = -index * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+        }
+
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="box.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <a href="inicio.html" style="text-decoration: none;"><p> desenvolvido por  Christian</p></a>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="begining.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+            </a>
+            <a href="begining.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>the search for the best is over</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+            <a href="xobx.html">Xbox</a>
+            <a href="stationplays.html">Playstation</a>
+            <a href="cps.html">Pc</a>
+            <a href="bile.html">Mobile</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Search..." />
+        </div>
+
+        <div class="papo">
+            <h1>XBOX</h1>
+            <p>Discover a new era of gaming with Xbox, one of the most powerful and innovative gaming platforms in the world. With stunning graphics, next-gen performance, and a vast library of exclusive games, Xbox offers an unparalleled experience for gamers of all types.</p>
+            <p>With Xbox, you're not just playing; you're entering an interactive ecosystem that connects players worldwide, with features like Xbox Live and cross-play, allowing you to compete and cooperate with friends and players across platforms. Get ready to embark on a journey like no other, with the confidence that a platform that evolves with each generation backs you.</p>
+        </div>
+
+        <div class="reta">
+            <!-- Product Listings -->
+            <div class="orga">
+                <div class="caixa">
+                    <a href="eldens.html">
+                        <img src="small.png" alt="Elden Ring">
+                        <p class="sla">Elden Ring (PC/Console)</p>
+                        <p>R$108,00</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="crafts.html">
+                        <img src="mine.png" alt="Minecraft">
+                        <p class="sla">Minecraft (PC/Console/Mobile/Nintendo)</p>
+                        <p>R$18,00</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="mirages.html">
+                        <img src="assa.png" alt="Assassin's Creed Mirage">
+                        <p class="sla">Assassin's Creed Mirage</p>
+                        <p>R$168,90</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="orga">
+                <div class="caixa">
+                    <a href="evi.html">
+                        <img src="resi.png" alt="Resident Evil 4">
+                        <p class="sla">Resident Evil 4</p>
+                        <p>R$199,90</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="small.png" alt="Game 1" class="carousel-item">
+                <img src="alien.png" alt="Game 2" class="carousel-item">
+                <img src="cover.png" alt="Game 3" class="carousel-item">
+                <img src="mine.png" alt="Game 4" class="carousel-item">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="reto">
+            <div class="contaF">
+                <p>Contact: someone@example.com</p>
+            </div>
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="Instagram">
+                <img src="" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let index = 0;
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+            index += step;
+
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            const newTransform = -index * 100;
+            document.querySelector('.carousel-images').style.transform = `translateX(${newTransform}%)`;
+        }
+
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+</body>
+
+</html>

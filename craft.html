@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft GameStore</title>
+    <link rel="stylesheet" href="conf.css">
+    <link rel="stylesheet" href="us.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="chris">
+            <p> Criado por:Christian</p>
+            <hr>
+        </div>
+
+        <div class="etc">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="logo.png" alt="logs">
+                </div>
+            </a>
+            <a href="index.html">
+                <div class="tema">
+                    <h1>GameStore</h1>
+                </div>
+            </a>
+            <div class="lemas">
+                <div class="lema">
+                    <p>a procura pelo melhor acabou</p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nasv">
+            
+
+            <a href="xbox.html">xbox</a>
+            <a href="playstation.html">playstation</a>
+            <a href="pc.html">pc</a>
+            <a href="mobile.html">mobile</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="buscar" id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+        </div>
+
+        <div class="compra">
+
+            <div class="thumbnails">
+                <img src="mine.jpeg" alt="amoungs" onclick="changeImage( 'mine.jpeg', this)">
+                <img src="mintop.jpg" alt="amongs" onclick="changeImage( 'mintop.jpg', this)">
+                <img src="pass.webp" alt="slasd"     onclick="changeImage( 'pass.webp', this)">
+            </div>
+
+            <div class="principal" id="principal">
+                <img src="mine.jpeg" alt="amoung us iamges">
+            </div>
+
+            <div class="preco">
+                <h1>Minecraft <BR></BR>(Pc/Console /Mobile)</h1>
+                <h1>R$18,00</h1>
+                <p>
+                    10x de 1,80 sem juros
+                </p>
+                <button style="background-color:#606a90;border-radius: 15px;align-items: center;text-align: center; ">
+                    <h1>comprar</h1>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="infos">
+            <div class="bloco">
+                <p class="titulo">
+                    INFORMAÇÕES SOBRE O PRODUTO
+                </p>
+                <p>
+                    Constrói tudo o que possas imaginar, 
+                    desvenda mistérios inquietantes e sobreviva à 
+                    noite no djogo sandbox. O Minecraft
+                     é diferente de cada vez que o jogas
+                  e aventuras inesquecíveis esperam por
+                   você a cada esquina.
+                    Explora e constrói o 
+                    seu caminho num mundo
+                     infinito que podes moldar à 
+                    vontade, um bloco de cada vez. os jogadores exploram um mundo aberto tridimensional intencionalmente em blocos, pixelizado e gerado proceduralmente, podendo descobrir e extrair matérias-primas, ferramentas artesanais, construir estruturas ou terraplenagens e, dependendo do modo de jogo, podem combater inimigos controlados por computador, bem
+                     como cooperar ou competir contra outros jogadores no mesmo mundo.
+
+
+                </p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Características
+                </p>
+                <p>Lançamento	18 de novembro de 2011
+                    
+                    Gênero(s):	Sandbox
+                    Sobrevivência
+                    Multijogador 
+
+                </p>
+
+                <p>-modelo:midia digital</p>
+            </div>
+            <div class="bloco">
+                <p class="titulo">
+                    Informações adicionais:
+                </p>
+                <p>Lançado inicialmente em 2009 como um 
+                    projeto independente de Markus "Notch" Persson, 
+                    Minecraft teve sua versão completa lançada em 2011 
+                    para PC. O jogo foi expandido para diversas
+                     plataformas ao longo dos anos, sendo disponibilizado
+                      em 2011 para dispositivos móveis com Android e iOS,
+                       em 2012 para Xbox 360, em 2013 para PlayStation 3,
+                        e em 2014 para PlayStation 4, Xbox One e
+                         PlayStation Vita. Em 2017, Minecraft foi 
+                         lançado para Nintendo Switch, e em 2020 o
+                          jogo chegou ao PlayStation 5 e Xbox Series 
+                          X/S.
+
+
+
+
+                </p>
+                <p> Gênero(s):Jogo em grupo
+                    Sobrevivência
+                    Modos de jogo Multijogador</p>
+            </div>
+        </div>
+        <div class="bloco">
+            <p class="titulo">
+                Imagens Meramente Ilustrativas.
+
+                Todas as Informações divulgadas são de responsabilidade do Fabricante/Fornecedor.
+
+                Verifique com os fabricantes do produto e de seus componentes eventuais limitações à utilização de todos
+                os recursos e funcionalidades.
+
+
+
+                *Garantia de 90 dias pelo fabricante contra defeitos de fabricação não decorrentes de uso.
+            </p>
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <hr>
+
+        <div class="reto">
+            <div class="contaF">
+                <a href="suporte.html" style="text-decoration: none;">
+                    <p style="color:beige;">contato:algum@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="game">
+                <h1>GameStore</h1>
+            </div>
+            <div class="logos">
+                <img src="insta.png" alt="insta">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+       function changeImage(imageSrc, thumbnailElement) {
+            // Troca a imagem principal com base na miniatura clicada
+            const principalImage = document.getElementById('principal').getElementsByTagName('img')[0];
+            principalImage.src = imageSrc;
+
+            // Remove a classe 'selected' de todas as miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(img => img.classList.remove('selected'));
+
+            // Adiciona a classe 'selected' à miniatura clicada
+            thumbnailElement.classList.add('selected');
+        }
+
+    </script>
+</body>
+
+</html>
